@@ -25,7 +25,7 @@ public class NewClassTrigger {
             
         for (Lead l : newLead) {
             if (!mapCampaign.containsKey(l.LeadSource)) {
-                l.addError('This campaign:('+l.LeadSource+') does not exist'); 
+                l.addError('This campaign:('+l.LeadSource+') does not exist :(');
                 continue;
             }
             for(Campaign c : mapCampaign.get(l.LeadSource).ChildCampaigns){
